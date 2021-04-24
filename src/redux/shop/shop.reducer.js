@@ -1,4 +1,4 @@
-import ShopActionTypes from '../../pages/shop/shop.types';
+import ShopActionTypes from './shop.types';
 
 const INITIAL_STATE = {
   collections: null,
@@ -12,8 +12,7 @@ const shopReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         isFetching: true
-      }
-
+      };
     case ShopActionTypes.FETCH_COLLECTIONS_SUCCESS:
       return {
         ...state,
